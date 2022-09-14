@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nJX-Mj-j1v">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ThesisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="UITextView" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-AP-mu6">
+                                <rect key="frame" x="200" y="611" width="159" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="cfb-oh-DXh"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OE5-Dr-xRL">
+                                <rect key="frame" x="20" y="64" width="335" height="138"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeG-Tg-AZ9">
+                                        <rect key="frame" x="109" y="0.0" width="117.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9d-a9-CBL">
+                                        <rect key="frame" x="0.0" y="36.5" width="335" height="101.5"/>
+                                        <string key="text">This app has been developed only for testing purposes. It is designed to not make any real access to protected resources (such as contacts or calendars). Use it only on dedicated devices or simulators.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-MN-51G">
+                                <rect key="frame" x="20" y="222" width="335" height="119.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMk-Ew-iaX">
+                                        <rect key="frame" x="76" y="0.0" width="183.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Protected Resources"/>
+                                        <connections>
+                                            <segue destination="ckm-rU-Jsh" kind="show" id="hsl-aJ-w6A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoQ-bR-zbp">
+                                        <rect key="frame" x="130" y="42.5" width="75" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huw-aQ-lBc">
+                                        <rect key="frame" x="130" y="85" width="75" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tlT-AP-mu6" secondAttribute="trailing" constant="16" id="84U-ZP-J5M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tlT-AP-mu6" secondAttribute="bottom" constant="20" id="8FB-gt-1tg"/>
+                            <constraint firstItem="OE5-Dr-xRL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BnU-mg-1SB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OE5-Dr-xRL" secondAttribute="trailing" constant="20" id="G4O-io-8hE"/>
+                            <constraint firstItem="tlT-AP-mu6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="200" id="WtK-dm-nuR"/>
+                            <constraint firstItem="e8G-MN-51G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aRy-CZ-hnF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8G-MN-51G" secondAttribute="trailing" constant="20" id="iKE-GP-g3l"/>
+                            <constraint firstItem="OE5-Dr-xRL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tOV-wF-mHd"/>
+                            <constraint firstItem="e8G-MN-51G" firstAttribute="top" secondItem="OE5-Dr-xRL" secondAttribute="bottom" constant="20" id="xlb-gj-ZU5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="69S-WO-qWe"/>
+                    <connections>
+                        <outlet property="AuthorTextView" destination="tlT-AP-mu6" id="ZqV-JO-8kp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914.4000000000001" y="3.1484257871064472"/>
+        </scene>
+        <!--Protected Resources-->
+        <scene sceneID="Ujj-Rd-73s">
+            <objects>
+                <viewController id="ckm-rU-Jsh" customClass="ProtectedResourcesViewController" customModule="ThesisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Npb-ga-ugJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dQv-tH-GOC">
+                                <rect key="frame" x="20" y="64" width="335" height="243"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select which resource you want to grant access " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6t-r0-O6n">
+                                        <rect key="frame" x="8.5" y="0.0" width="318" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfm-d1-eIR">
+                                        <rect key="frame" x="118.5" y="57" width="98" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bluetooth"/>
+                                        <connections>
+                                            <action selector="bluetoothPressed:" destination="ckm-rU-Jsh" eventType="touchUpInside" id="O0Q-e3-muw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK8-ip-VDt">
+                                        <rect key="frame" x="117" y="107.5" width="101" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Calendars"/>
+                                        <connections>
+                                            <action selector="calendarsPressed:" destination="ckm-rU-Jsh" eventType="touchUpInside" id="Lcz-Th-7kQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LD-vX-Qw4">
+                                        <rect key="frame" x="121" y="158" width="93" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Contacts"/>
+                                        <connections>
+                                            <action selector="contactsPressed:" destination="ckm-rU-Jsh" eventType="touchUpInside" id="C99-dj-KdA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOh-D6-1SH">
+                                        <rect key="frame" x="123" y="208.5" width="89.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Location"/>
+                                        <connections>
+                                            <action selector="locationPressed:" destination="ckm-rU-Jsh" eventType="touchUpInside" id="FAM-60-Jbj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-OI-MKX">
+                                <rect key="frame" x="20" y="337" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTh-Fj-lyz">
+                                <rect key="frame" x="20" y="387.5" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iFw-Tz-ayI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iFw-Tz-ayI" firstAttribute="trailing" secondItem="qTh-Fj-lyz" secondAttribute="trailing" constant="20" id="Fkc-6o-iiQ"/>
+                            <constraint firstItem="8xd-OI-MKX" firstAttribute="leading" secondItem="iFw-Tz-ayI" secondAttribute="leading" constant="20" id="Jnh-U1-TJZ"/>
+                            <constraint firstItem="qTh-Fj-lyz" firstAttribute="leading" secondItem="iFw-Tz-ayI" secondAttribute="leading" constant="20" id="Xe2-8n-moy"/>
+                            <constraint firstItem="dQv-tH-GOC" firstAttribute="top" secondItem="iFw-Tz-ayI" secondAttribute="top" constant="20" id="bT9-OM-kgw"/>
+                            <constraint firstItem="8xd-OI-MKX" firstAttribute="top" secondItem="dQv-tH-GOC" secondAttribute="bottom" constant="30" id="bcD-x0-T03"/>
+                            <constraint firstItem="dQv-tH-GOC" firstAttribute="leading" secondItem="Npb-ga-ugJ" secondAttribute="leading" constant="20" id="gFS-xT-zgo"/>
+                            <constraint firstItem="iFw-Tz-ayI" firstAttribute="trailing" secondItem="8xd-OI-MKX" secondAttribute="trailing" constant="20" id="gXH-aW-TiD"/>
+                            <constraint firstAttribute="trailing" secondItem="dQv-tH-GOC" secondAttribute="trailing" constant="20" id="gyk-NB-ub6"/>
+                            <constraint firstItem="qTh-Fj-lyz" firstAttribute="top" secondItem="8xd-OI-MKX" secondAttribute="bottom" constant="30" id="xxS-Nm-RP0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Protected Resources" id="hdQ-Uc-2w1"/>
+                    <connections>
+                        <outlet property="bluetoothButton" destination="mfm-d1-eIR" id="DYm-JK-2ij"/>
+                        <outlet property="calendarButton" destination="oK8-ip-VDt" id="WAB-fF-dKG"/>
+                        <outlet property="contactsButton" destination="9LD-vX-Qw4" id="oH6-T6-JaN"/>
+                        <outlet property="deniedAuthLabel" destination="qTh-Fj-lyz" id="fyq-xi-MLQ"/>
+                        <outlet property="locationButton" destination="KOh-D6-1SH" id="D5D-9J-m1y"/>
+                        <outlet property="statusLabel" destination="8xd-OI-MKX" id="gZV-YU-5Lm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbN-BY-0US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703.1999999999998" y="-288.30584707646182"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="yAC-ry-Sx3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nJX-Mj-j1v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gcm-sM-H6n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tyA-Xx-yHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wvT-kW-MVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4V-xs-iIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,4 +7,5 @@
 * iOS 14.4+
 * native support for iPhone 6S+
 * no support for iPadOS
+
 This app has been specifically created for testing purposes.

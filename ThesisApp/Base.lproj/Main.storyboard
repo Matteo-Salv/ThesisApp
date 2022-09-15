@@ -46,7 +46,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-MN-51G">
-                                <rect key="frame" x="20" y="222" width="335" height="119.5"/>
+                                <rect key="frame" x="20" y="222" width="335" height="247"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMk-Ew-iaX">
                                         <rect key="frame" x="76" y="0.0" width="183.5" height="34.5"/>
@@ -57,14 +57,38 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoQ-bR-zbp">
-                                        <rect key="frame" x="130" y="42.5" width="75" height="34.5"/>
+                                        <rect key="frame" x="106.5" y="42.5" width="122" height="34.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="System Calls"/>
+                                        <connections>
+                                            <segue destination="3iF-aZ-cIY" kind="show" id="ewe-uq-Iuq"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huw-aQ-lBc">
-                                        <rect key="frame" x="130" y="85" width="75" height="34.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Da-BQ-tWu">
+                                        <rect key="frame" x="134" y="85" width="67.5" height="34.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Slider"/>
+                                        <connections>
+                                            <segue destination="Juu-xg-aQg" kind="show" id="ofk-ae-I4t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Av6-Az-zsr">
+                                        <rect key="frame" x="133.5" y="127.5" width="68.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alerts"/>
+                                        <connections>
+                                            <segue destination="xaG-fE-Xde" kind="show" id="5JQ-QZ-8BS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSA-5M-zmk">
+                                        <rect key="frame" x="115" y="170" width="105" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Text Fields"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfw-aq-u7d">
+                                        <rect key="frame" x="121" y="212.5" width="93" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Switches"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -91,6 +115,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1914.4000000000001" y="3.1484257871064472"/>
+        </scene>
+        <!--Alerts-->
+        <scene sceneID="No5-ss-mG5">
+            <objects>
+                <viewController id="xaG-fE-Xde" customClass="AlertsViewController" customModule="ThesisApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OlQ-Ya-ZDb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3gO-br-zyC">
+                                <rect key="frame" x="20" y="226.5" width="335" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJT-3k-TOc">
+                                        <rect key="frame" x="105.5" y="0.0" width="124" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Generic Alert"/>
+                                        <connections>
+                                            <action selector="genericAlertButtonPressed:" destination="xaG-fE-Xde" eventType="touchUpInside" id="bCq-sg-H2W"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-GA-cdA">
+                                        <rect key="frame" x="147" y="42.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1F-Yd-uAd">
+                                        <rect key="frame" x="84.5" y="71" width="166.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alert with text field"/>
+                                        <connections>
+                                            <action selector="alertWithTextFieldButtonPressed:" destination="xaG-fE-Xde" eventType="touchUpInside" id="6ir-QY-9mD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wex-bC-XbT">
+                                        <rect key="frame" x="147" y="113.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kS5-5K-eHf">
+                                <rect key="frame" x="20" y="64" width="335" height="142.5"/>
+                                <string key="text">In this section there are two buttons connected to two different Alerts: the first one will show an alert in which it is possible to interact with 3 different buttons, the second instead contains a text field. The action taken will be showed by a label under the corresponding button.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RBg-ef-YSM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kS5-5K-eHf" firstAttribute="leading" secondItem="RBg-ef-YSM" secondAttribute="leading" constant="20" id="7XJ-nR-hVp"/>
+                            <constraint firstItem="kS5-5K-eHf" firstAttribute="top" secondItem="RBg-ef-YSM" secondAttribute="top" constant="20" id="D3K-dw-9pK"/>
+                            <constraint firstItem="3gO-br-zyC" firstAttribute="leading" secondItem="RBg-ef-YSM" secondAttribute="leading" constant="20" id="MOf-Fu-0Rz"/>
+                            <constraint firstItem="RBg-ef-YSM" firstAttribute="trailing" secondItem="3gO-br-zyC" secondAttribute="trailing" constant="20" id="pEI-s8-Lb6"/>
+                            <constraint firstItem="3gO-br-zyC" firstAttribute="top" secondItem="kS5-5K-eHf" secondAttribute="bottom" constant="20" id="sKR-pz-Rzq"/>
+                            <constraint firstItem="RBg-ef-YSM" firstAttribute="trailing" secondItem="kS5-5K-eHf" secondAttribute="trailing" constant="20" id="wMP-SZ-Aqq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alerts" id="RBV-Dz-b01"/>
+                    <connections>
+                        <outlet property="alertWithTextFieldLabel" destination="wex-bC-XbT" id="bbi-UX-tGP"/>
+                        <outlet property="genericAlertLabel" destination="vaN-GA-cdA" id="w6X-ze-IsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59i-ZT-203" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702" y="3"/>
+        </scene>
+        <!--System Calls-->
+        <scene sceneID="4N1-T2-996">
+            <objects>
+                <viewController id="3iF-aZ-cIY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KYs-aT-a4H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CZW-iZ-X3w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="System Calls" id="139-kI-4Bv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a98-ru-dwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1914" y="775"/>
+        </scene>
+        <!--Slider-->
+        <scene sceneID="Eqd-GC-Kfr">
+            <objects>
+                <viewController id="Juu-xg-aQg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2aB-1g-Br2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cfO-Xo-K4b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Slider" id="J6c-O3-cQE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPx-ZC-XST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="775"/>
         </scene>
         <!--Protected Resources-->
         <scene sceneID="Ujj-Rd-73s">
@@ -182,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbN-BY-0US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2703.1999999999998" y="-288.30584707646182"/>
+            <point key="canvasLocation" x="1220" y="775"/>
         </scene>
         <!--Item-->
         <scene sceneID="yAC-ry-Sx3">

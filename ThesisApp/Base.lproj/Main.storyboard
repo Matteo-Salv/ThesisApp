@@ -12,14 +12,84 @@
         <!--Text Fields-->
         <scene sceneID="ea0-W0-qPJ">
             <objects>
-                <viewController id="tbv-2s-c9a" sceneMemberID="viewController">
+                <viewController id="tbv-2s-c9a" customClass="TextFieldViewController" customModule="ThesisApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nUa-4r-juN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sx3-cG-xe6">
+                                <rect key="frame" x="20" y="455" width="335" height="76"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ZW-FN-gnv">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="secondTextFieldAction:" destination="tbv-2s-c9a" eventType="editingDidEnd" id="QcI-sT-Aft"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FE-yd-zd8">
+                                        <rect key="frame" x="0.0" y="42" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-4Z-JAN">
+                                <rect key="frame" x="20" y="64" width="335" height="101.5"/>
+                                <string key="text">In this section there are two text fields. With the first one, once you wrote something, you must confirm what you wrote with a button. In both cases a label will print what you inserted.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vf3-6k-tpr">
+                                <rect key="frame" x="20" y="265.5" width="335" height="119.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHs-yW-1ih">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5I-Bz-OMP">
+                                        <rect key="frame" x="0.0" y="42.5" width="335" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="confirm"/>
+                                        <connections>
+                                            <action selector="confirmButton:" destination="tbv-2s-c9a" eventType="touchUpInside" id="5dG-Tj-QnX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNP-ZW-gzD">
+                                        <rect key="frame" x="0.0" y="85" width="335" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MCF-J0-afl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ksG-4Z-JAN" secondAttribute="trailing" constant="20" id="5s7-Vt-8Wf"/>
+                            <constraint firstItem="sx3-cG-xe6" firstAttribute="top" secondItem="vf3-6k-tpr" secondAttribute="bottom" constant="70" id="Bkj-lE-BeJ"/>
+                            <constraint firstItem="sx3-cG-xe6" firstAttribute="leading" secondItem="MCF-J0-afl" secondAttribute="leading" constant="20" id="dbN-Hp-kpa"/>
+                            <constraint firstItem="ksG-4Z-JAN" firstAttribute="top" secondItem="MCF-J0-afl" secondAttribute="top" constant="20" id="hLV-uv-djT"/>
+                            <constraint firstItem="ksG-4Z-JAN" firstAttribute="leading" secondItem="MCF-J0-afl" secondAttribute="leading" constant="20" id="l5c-7g-IeO"/>
+                            <constraint firstItem="MCF-J0-afl" firstAttribute="trailing" secondItem="vf3-6k-tpr" secondAttribute="trailing" constant="20" id="lNn-tL-0jc"/>
+                            <constraint firstItem="vf3-6k-tpr" firstAttribute="top" secondItem="ksG-4Z-JAN" secondAttribute="bottom" constant="100" id="obC-QS-oFV"/>
+                            <constraint firstItem="MCF-J0-afl" firstAttribute="trailing" secondItem="sx3-cG-xe6" secondAttribute="trailing" constant="20" id="s7S-V4-oVY"/>
+                            <constraint firstItem="vf3-6k-tpr" firstAttribute="leading" secondItem="MCF-J0-afl" secondAttribute="leading" constant="20" id="vxp-Ra-8Zp"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text Fields" id="J5L-P1-Juz"/>
+                    <connections>
+                        <outlet property="confirmButton" destination="y5I-Bz-OMP" id="OOl-JF-iMB"/>
+                        <outlet property="firstLabel" destination="qNP-ZW-gzD" id="4jh-y5-3cv"/>
+                        <outlet property="firstTextFieldOutlet" destination="eHs-yW-1ih" id="UgB-Qi-LXD"/>
+                        <outlet property="secondLabel" destination="9FE-yd-zd8" id="lTU-pP-LD3"/>
+                        <outlet property="secondTextFieldOutlet" destination="1ZW-FN-gnv" id="dw8-F2-3xJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMl-hp-5LP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,7 +411,6 @@
         <!--Protected Resources-->
         <scene sceneID="Ujj-Rd-73s">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qbN-BY-0US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="ckm-rU-Jsh" customClass="ProtectedResourcesViewController" customModule="ThesisApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Npb-ga-ugJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -427,6 +496,7 @@
                         <outlet property="statusLabel" destination="8xd-OI-MKX" id="gZV-YU-5Lm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbN-BY-0US" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="465" y="775"/>
         </scene>

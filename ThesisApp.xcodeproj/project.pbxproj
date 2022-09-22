@@ -12,6 +12,7 @@
 		953B6F2928D3425F00B31F2E /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B6F2828D3425F00B31F2E /* SliderViewController.swift */; };
 		95648BE228D87EF10066F189 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95648BE128D87EF10066F189 /* TextFieldViewController.swift */; };
 		958E260A28DC4D7F00831921 /* SwitchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E260928DC4D7F00831921 /* SwitchesViewController.swift */; };
+		958E260C28DCA72000831921 /* SystemCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E260B28DCA72000831921 /* SystemCallsViewController.swift */; };
 		95A248DC28D1C05600B6C600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A248DB28D1C05600B6C600 /* AppDelegate.swift */; };
 		95A248DE28D1C05600B6C600 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A248DD28D1C05600B6C600 /* SceneDelegate.swift */; };
 		95A248E028D1C05600B6C600 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A248DF28D1C05600B6C600 /* MainViewController.swift */; };
@@ -27,6 +28,7 @@
 		953B6F2828D3425F00B31F2E /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		95648BE128D87EF10066F189 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		958E260928DC4D7F00831921 /* SwitchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchesViewController.swift; sourceTree = "<group>"; };
+		958E260B28DCA72000831921 /* SystemCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemCallsViewController.swift; sourceTree = "<group>"; };
 		95A248D828D1C05600B6C600 /* ThesisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThesisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A248DB28D1C05600B6C600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A248DD28D1C05600B6C600 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				95A248DD28D1C05600B6C600 /* SceneDelegate.swift */,
 				95A248DF28D1C05600B6C600 /* MainViewController.swift */,
 				95A248E128D1C05600B6C600 /* Main.storyboard */,
+				958E260B28DCA72000831921 /* SystemCallsViewController.swift */,
 				95648BE128D87EF10066F189 /* TextFieldViewController.swift */,
 				95A248EF28D1D4B600B6C600 /* ProtectedResourcesViewController.swift */,
 				95A248E428D1C05900B6C600 /* Assets.xcassets */,
@@ -117,6 +120,7 @@
 				TargetAttributes = {
 					95A248D728D1C05600B6C600 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -158,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				958E260A28DC4D7F00831921 /* SwitchesViewController.swift in Sources */,
+				958E260C28DCA72000831921 /* SystemCallsViewController.swift in Sources */,
 				95A248E028D1C05600B6C600 /* MainViewController.swift in Sources */,
 				95A248F028D1D4B600B6C600 /* ProtectedResourcesViewController.swift in Sources */,
 				95648BE228D87EF10066F189 /* TextFieldViewController.swift in Sources */,
@@ -309,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82AWN77562;
@@ -332,6 +338,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -342,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82AWN77562;

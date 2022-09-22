@@ -410,7 +410,7 @@
         <!--System Calls-->
         <scene sceneID="4N1-T2-996">
             <objects>
-                <viewController id="3iF-aZ-cIY" sceneMemberID="viewController">
+                <viewController id="3iF-aZ-cIY" customClass="SystemCallsViewController" customModule="ThesisApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYs-aT-a4H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

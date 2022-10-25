@@ -2,16 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
-	<key>NSContactsUsageDescription</key>
-	<string>The access to your contacts is requested only for testing purposes. This app is not designed to make any real effect</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>The access to your calendars is requested only for testing purposes. This app is not designed to make any real effect</string>
-	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Only for test purposes. This app is not designed to make any real Bluetooth usage</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Only for test purposes. This app is not designed to make any real location usage</string>
+	<string>The access to your calendar is requested only for testing purposes. This app is not designed to make any real effect</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>The access to your reminders is requested only for testing purposes. This app is not designed to make any real effect</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

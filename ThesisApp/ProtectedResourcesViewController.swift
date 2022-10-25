@@ -117,6 +117,7 @@ class ProtectedResourcesViewController: UIViewController, CBCentralManagerDelega
     
     //calendar
     @IBAction func calendarsPressed(_ sender: Any) {
+        checkRequestsStatus()
         //task: obbligatorio per effettuare codice async in un contesto non async
         Task{
             do{
@@ -126,6 +127,7 @@ class ProtectedResourcesViewController: UIViewController, CBCentralManagerDelega
             }
             checkRequestsStatus()
         }
+        
     }
     
     //contacts

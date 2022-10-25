@@ -114,10 +114,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OE5-Dr-xRL">
-                                <rect key="frame" x="20" y="64" width="335" height="138"/>
+                                <rect key="frame" x="20" y="166" width="335" height="138"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disclaimer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeG-Tg-AZ9">
-                                        <rect key="frame" x="109" y="0.0" width="117.5" height="31.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeG-Tg-AZ9">
+                                        <rect key="frame" x="111.5" y="0.0" width="112" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -131,8 +131,15 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unige logo" translatesAutoresizingMaskIntoConstraints="NO" id="BEK-ku-awv">
+                                <rect key="frame" x="72.5" y="44" width="230" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="DjS-WQ-yng"/>
+                                    <constraint firstAttribute="width" constant="230" id="yc4-4u-zHX"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-MN-51G">
-                                <rect key="frame" x="20" y="222" width="335" height="247"/>
+                                <rect key="frame" x="20" y="314" width="335" height="247"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMk-Ew-iaX">
                                         <rect key="frame" x="76" y="0.0" width="183.5" height="34.5"/>
@@ -188,15 +195,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OE5-Dr-xRL" firstAttribute="top" secondItem="BEK-ku-awv" secondAttribute="bottom" constant="10" id="24M-f8-45y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tlT-AP-mu6" secondAttribute="trailing" constant="16" id="84U-ZP-J5M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tlT-AP-mu6" secondAttribute="bottom" constant="20" id="8FB-gt-1tg"/>
                             <constraint firstItem="OE5-Dr-xRL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BnU-mg-1SB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OE5-Dr-xRL" secondAttribute="trailing" constant="20" id="G4O-io-8hE"/>
                             <constraint firstItem="tlT-AP-mu6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="200" id="WtK-dm-nuR"/>
+                            <constraint firstItem="BEK-ku-awv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a9U-op-7qi"/>
                             <constraint firstItem="e8G-MN-51G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aRy-CZ-hnF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8G-MN-51G" secondAttribute="trailing" constant="20" id="iKE-GP-g3l"/>
-                            <constraint firstItem="OE5-Dr-xRL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tOV-wF-mHd"/>
-                            <constraint firstItem="e8G-MN-51G" firstAttribute="top" secondItem="OE5-Dr-xRL" secondAttribute="bottom" constant="20" id="xlb-gj-ZU5"/>
+                            <constraint firstItem="BEK-ku-awv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m4B-Pz-pOg"/>
+                            <constraint firstItem="e8G-MN-51G" firstAttribute="top" secondItem="OE5-Dr-xRL" secondAttribute="bottom" constant="10" id="s5h-Fx-jce"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="69S-WO-qWe"/>
@@ -805,6 +814,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="unige logo" width="1024" height="1024"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

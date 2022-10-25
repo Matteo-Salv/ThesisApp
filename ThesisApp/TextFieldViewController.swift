@@ -56,7 +56,7 @@ class TextFieldViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func confirmButton(_ sender: Any) {
-        var valueInserted = firstTextFieldOutlet.text!
+        let valueInserted = firstTextFieldOutlet.text!
         if valueInserted == ""{
             firstLabel.text = "Insert a valid text!"
         }else{

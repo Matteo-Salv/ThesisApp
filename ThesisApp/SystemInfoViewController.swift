@@ -118,7 +118,7 @@ class SystemInfoViewController: UIViewController {
                 if UIDevice.current.batteryLevel < 0.2{
                     message = "battery below 20%! Charge your iPhone!"
                 }else if UIDevice.current.batteryLevel > 0.8{
-                    message = "your iPhone is charged. To preserve the battery, unplug the device"
+                    message = "your iPhone is charged. To preserve the battery, don't charge the device now"
                 }else{
                     message = "your iPhone is fine. To preserve the battery don't charge below 20% and over 80%"
                 }

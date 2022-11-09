@@ -55,7 +55,7 @@ class AlertsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         genericAlertLabel.text = "No interactions with first Alert yet"
-        alertWithTextFieldLabel.text = "No interactions second Alert yet"
+        alertWithTextFieldLabel.text = "No interactions with second Alert yet"
     }
 
     override func viewDidLoad() {

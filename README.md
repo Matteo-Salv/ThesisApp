@@ -1,4 +1,4 @@
-# ThesisApp - Under development
+# ThesisApp
 ## Computer Engineering - Software Platforms and Cybersecurity, University of Genoa
 This App is part of my work for the Bachelor Degree Thesis named 'Automatic Dynamic Analysis on iOS platform'. 
 ## Target development
